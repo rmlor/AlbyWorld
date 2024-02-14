@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>My Recipes</title>
+{% endblock %}
+
+{% block header %}
+<h1>My Recipes</h1>
+{% endblock %}
+
+{% block table %}
+    {% for item in values %}
+        <ul>
+            <li>
+                <p>Name: {{item.name}}</p>
+                <p>Ingredients: {{item.ingredients}}</p>
+                <p>Steps: {{item.steps}}</p>
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
