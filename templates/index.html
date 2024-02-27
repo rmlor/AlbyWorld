@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise/Sunset Calculator</title>
+</head>
+<h1>
+    Sunrise and Sunset Calculator
+</h1>
+<body>
+    <div>
+        <form method="post">
+            <label for="longitude">Longitude</label>
+            <input type='number' name="longitude" step="0.000001" max="180" min="-180" required>
+
+            <label for="'latitude">Latitude</label>
+            <input type='number' name="latitude" step="0.000001" max="90" min="-90" required>
+
+            <label for="'date">Date</label>
+            <input type='date' name="date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
